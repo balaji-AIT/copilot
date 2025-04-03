@@ -3,7 +3,7 @@ name: Deploy Flask API to Azure Web App with Terraform
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   deploy:
