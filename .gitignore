@@ -1,34 +1,35 @@
-# Node modules
-node_modules/
-
-# Build output
-build/
-dist/
-
-# System files
-.DS_Store
-Thumbs.db
-
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Environment files
+# Python-related files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+*.env
 
-# IDE and editor specific files
+# Virtual environment
+.venv/
+
+# Logs & Debugging files
+logs/
+*.log
+
+# VS Code settings
 .vscode/
-.idea/
 
-# OS-specific files
-ehthumbs.db
-Desktop.ini
+# Terraform files
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+.terraform.lock.hcl
 
-# package-lock.json and yarn.lock (optional, depending on your workflow)
-# package-lock.json
-# yarn.lock
+# Ignore secrets (Always store in GitHub Secrets)
+secrets.json
+*.pem
+
+# Ignore deployment artifacts
+*.zip
+*.tar.gz
+
+# Ignore GitHub Actions cache
+.github/workflows/*.log
